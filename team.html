@@ -7,299 +7,269 @@
 	<title>Soccer Web - Team</title>
 </head>
 <body>
-	<!-- Menu -->
-	<div id="header">
-		<!-- Logo -->
-		<div class="logo">
-			<a href="index.html">
-				<img src="assets/logo.png" alt="Soccer Web Logo">
-			</a>
+	<div id="teamContainer">
+		<!-- Menu -->
+		<div id="header">
+			<!-- Logo -->
+			<div class="logo">
+				<a href="index.html">
+					<img src="assets/logo.png" alt="Soccer Web Logo">
+				</a>
+			</div>
+			<!-- Menu Links -->
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About Us</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<li>
+						<a href="termsandconditions.html">Terms & Conditions</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!-- Menu Links -->
-		<div class="nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="aboutus.html">About Us</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-				<li>
+		<div id="teamBasics">
+			<!-- Team Info -->
+			<div class="teamInfo">
+				<!-- Team Shield -->
+				<img src="assets/shield.png" alt="Team Shield">
+				<!-- Team Name -->
+				<p>Team Name</p>
+			</div>
+			<!-- Slider Previous Matches -->
+			<div class="slider">
+				<!-- Slider 1 -->
+				<div class="slide">
+					<div class="teamSlide">
+						<a href="team.html?teamId=1">
+							<img src="assets/shield.png" alt="Shield Home Team 1">
+							<p>Name Home Team 1</p>	
+						</a>
+					</div>
+					<div class="score">
+						<p>3 - 0</p>	
+					</div>				
+					<div class="teamSlide">
+						<a href="team.html?teamId=2">
+							<img src="assets/shield.png" alt="Shield Away Team 1">
+							<p>Name Away Team 1</p>					
+						</a>
+					</div>
+					<p class="date">10-10-2021</p>				
+				</div>
+			</div>
+			<!-- Slider Next Matches -->
+			<div class="slider">
+				<!-- Slider 1 -->
+				<div class="slide">
+					<div class="teamSlide">
+						<a href="team.html?teamId=1">
+							<img src="assets/shield.png" alt="Shield Home Team 1">
+							<p>Name Home Team 1</p>	
+						</a>
+					</div>
+					<div class="score">
+						<p>vs</p>	
+					</div>				
+					<div class="teamSlide">
+						<a href="team.html?teamId=2">
+							<img src="assets/shield.png" alt="Shield Away Team 1">
+							<p>Name Away Team 1</p>					
+						</a>
+					</div>
+					<p class="date">31-10-2021 <span>18:00 Hs/Col.</span></p>			
+				</div>
+			</div>
+		</div>
+		<!-- Player Lists -->
+		<div id="teamPlayers">
+			<!-- Goalkeepers Player -->
+			<div class="playersGroup bordered">
+				<!-- Player #1 -->
+				<a href="player.html?playerId=1">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 1">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #2 -->
+				<a href="player.html?playerId=2">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 2">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Defenders Player -->
+			<div class="playersGroup bordered">
+				<!-- Player #1 -->
+				<a href="player.html?playerId=1">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 1">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #2 -->
+				<a href="player.html?playerId=2">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 2">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #3 -->
+				<a href="player.html?playerId=3">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 3">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Midfielders Player -->
+			<div class="playersGroup bordered">
+				<!-- Player #1 -->
+				<a href="player.html?playerId=1">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 1">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #2 -->
+				<a href="player.html?playerId=2">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 2">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #3 -->
+				<a href="player.html?playerId=3">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 3">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!-- Forwards Player -->
+			<div class="playersGroup bordered">
+				<!-- Player #1 -->
+				<a href="player.html?playerId=1">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 1">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+				<!-- Player #2 -->
+				<a href="player.html?playerId=2">
+					<div class="playerInfo">
+						<!-- Player Image -->
+						<div class="playerImg">
+							<img src="assets/player.png" alt="Name Player 2">
+						</div>
+						<!-- Player Info -->
+						<div class="playerData">
+							<p>Player Name</p>
+							<p>Player Position</p>
+							<p>Player Number</p>
+							<p>Player Age</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer">
+			<p>Designed by Alonso Aponte H. - Soccer Web 2021© All Rights Reserved
+				<span>
 					<a href="termsandconditions.html">Terms & Conditions</a>
-				</li>
-			</ul>
+				</span>
+			</p>
 		</div>
-	</div>
-	<div id="teamBasics">
-		<!-- Team Info -->
-		<div class="teamInfo">
-			<!-- Team Shield -->
-			<img src="assets/shield.png" alt="Team Shield">
-			<!-- Team Name -->
-			<p>Team Name</p>
-		</div>
-		<!-- Slider Previous Matches -->
-		<div class="slider">
-			<!-- Slider 1 -->
-			<div class="slide">
-				<div class="teamSlide">
-					<a href="team.html?teamId=1">
-						<img src="assets/shield.png" alt="Shield Home Team 1">
-						<p>Name Home Team 1</p>	
-					</a>
-				</div>
-				<div class="score">
-					<p>3 - 0</p>	
-				</div>				
-				<div class="teamSlide">
-					<a href="team.html?teamId=2">
-						<img src="assets/shield.png" alt="Shield Away Team 1">
-						<p>Name Away Team 1</p>					
-					</a>
-				</div>
-				<p class="date">10-10-2021</p>				
-			</div>
-		</div>
-		<!-- Slider Next Matches -->
-		<div class="slider">
-			<!-- Slider 1 -->
-			<div class="slide">
-				<div class="teamSlide">
-					<a href="team.html?teamId=1">
-						<img src="assets/shield.png" alt="Shield Home Team 1">
-						<p>Name Home Team 1</p>	
-					</a>
-				</div>
-				<div class="score">
-					<p>vs</p>	
-				</div>				
-				<div class="teamSlide">
-					<a href="team.html?teamId=2">
-						<img src="assets/shield.png" alt="Shield Away Team 1">
-						<p>Name Away Team 1</p>					
-					</a>
-				</div>
-				<p class="date">31-10-2021 <span>18:00 Hs/Col.</span></p>			
-			</div>
-		</div>
-	</div>
-	<!-- Player Lists -->
-	<div id="teamPlayers">
-		<!-- Goalkeepers Player -->
-		<div class="playersGroup">
-			<!-- Player #1 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=1">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 1">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #2 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=2">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 2">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #3 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=3">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 3">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-		</div>
-		<!-- Defenders Player -->
-		<div class="playersGroup">
-			<!-- Player #1 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=1">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 1">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #2 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=2">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 2">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #3 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=3">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 3">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-		</div>
-		<!-- Midfielders Player -->
-		<div class="playersGroup">
-			<!-- Player #1 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=1">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 1">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #2 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=2">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 2">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #3 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=3">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 3">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-		</div>
-		<!-- Forwards Player -->
-		<div class="playersGroup">
-			<!-- Player #1 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=1">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 1">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #2 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=2">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 2">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-			<!-- Player #3 -->
-			<div class="playerInfo">
-				<a href="player.html?playerId=3">
-					<!-- Player Image -->
-					<div class="playerImg">
-						<img src="assets/player.png" alt="Name Player 3">
-					</div>
-					<!-- Player Info -->
-					<div class="playerData">
-						<p>Player Name</p>
-						<p>Player Position</p>
-						<p>Player Number</p>
-						<p>Player Age</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<!-- Footer -->
-	<div id="footer">
-		<p>Designed by Alonso Aponte H. - Soccer Web 2021© All Rights Reserved
-			<span>
-				<a href="termsandconditions.html">Terms & Conditions</a>
-			</span>
-		</p>
 	</div>
 </body>
 </html>

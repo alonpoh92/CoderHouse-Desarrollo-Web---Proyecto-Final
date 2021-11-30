@@ -260,6 +260,305 @@ body{
 	animation: scale 1000ms ease-in-out forwards;
 }
 
+/* ----------------- Teams Page CSS ---------------------*/
+#teamsContainer{
+	border: none;
+	display: grid;
+	grid-template-areas: 
+		"nav"
+		"bestPlayers"
+		"teams"
+		"footer";
+}
+
+#bestPlayers{
+	grid-area: bestPlayers;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px;
+	background-color: var(--lightBlue);
+}
+#bestPlayers a{
+	text-decoration: none;
+	display: inline-block;
+}
+#bestPlayers .bestPlayer{
+	width: 19%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+    overflow: hidden;
+}
+#bestPlayers .bestPlayer .playerImg{
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	object-position: center;
+}
+#bestPlayers .bestPlayer .name:hover .playerImg{
+	animation: scale 1000ms ease-in-out forwards;
+}
+#bestPlayers .bestPlayer .playerName{
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#bestPlayers .bestPlayer .team p{
+	display: inline;
+	color: #000;
+	font-size: 1.1rem;
+	line-height: 1.1rem;
+}
+#bestPlayers .bestPlayer .team img{
+	height: 1.1rem;
+	display: inline;
+}
+
+#teamsContent{
+	grid-area: teams;
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	background-color: var(--gray);
+}
+#teamsContent .standingsTable{
+	overflow-x: auto;
+	margin-top: 15px;
+}
+#teamsContent .standingsTable a{
+	text-decoration: none;
+	color: #000;
+}
+#teamsContent .standingsTable a:hover{
+	color: var(--yellow);
+}
+#teamsContent .standingsTable table tr{
+	text-align: center;
+}
+#teamsContent .standingsTable table td,
+#teamsContent .standingsTable table td{
+	padding: 2px 10px;
+}
+#teamsContent .standingsTable table .fixed{
+	position: sticky;
+	left: 2px;
+	white-space: nowrap;
+	background-color: var(--gray);
+}
+#teamsContent .teams{
+	overflow-y: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: start;
+	padding: 0 15px;
+}
+#teamsContent .teams .team{
+	width: 20%;
+	margin: 15px;
+	text-align: center;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+	border-color: var(--darkBlue);
+}
+#teamsContent .teams .team:hover{
+	border-color: var(--yellow);
+}
+#teamsContent .teams a{
+	text-decoration: none;
+}
+#teamsContent .teams .team .flag{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#teamsContent .teams .team:hover .flag{
+		animation: scale 1000ms ease-in-out forwards;
+}
+#teamsContent .teams .team .flag img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#teamsContent .teams .team .name{
+	width: 100%;
+	color: #FFF;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	position: absolute;
+	top: calc(50% - 1rem);
+	text-align: center;
+}
+#teamsContent .teams .team:hover .name{
+	animation: scale 1000ms ease-in-out forwards;
+}
+
+/* ----------------- Player Page CSS ---------------------*/
+#playerContainer{
+	border: none;
+	display: grid;
+	grid-template-areas: 
+		"nav"
+		"playerInfo"
+		"footer";
+}
+#playerInfo{
+	grid-area: playerInfo;
+	padding: 15px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#playerInfo .playerImg{
+	width: 30%;
+	margin: 1.5%;
+	text-align: center;
+	display: inline-block;
+}
+#playerInfo .playerImg img{
+	width: 70%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+#playerInfo .playerData{
+	width: 63%;
+	margin: 1.5%;
+	display: inline-block;
+	text-align: center;
+	background-color: #ccc;
+	padding: 20px;
+}
+#playerInfo .playerData a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+#playerInfo .playerData a p{
+	display: inline-block;
+}
+#playerInfo .playerData a img{
+	height: 1rem;
+	display: inline-block;
+}
+
+/* ----------------- Teams Page CSS ---------------------*/
+#teamContainer{
+	border: none;
+	display: grid;
+	grid-template-areas: 
+		"nav"
+		"teamBasics"
+		"teamPlayers"
+		"footer";
+}
+
+#teamBasics{
+	grid-area: teamBasics;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#teamBasics .teamInfo{
+	width: 27%;
+	text-align: center;
+	display: inline-block;
+}
+#teamBasics .teamInfo img{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#teamBasics .teamInfo p{
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#teamBasics .slider{
+	width: 34%;
+	padding: 1.5%;
+	display: inline-block;
+	overflow: hidden;
+	background-color: #ccc;
+}
+#teamBasics .slider .slide{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+#teamBasics .slider .slide a{
+	text-decoration: none;
+}
+#teamBasics .slider .slide .teamSlide{
+	display: inline-block;
+	width: 30%;
+}
+#teamBasics .slider .slide .teamSlide a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+#teamBasics .slider .slide .score{
+	width: 25%;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#teamBasics .slider .slide .date{
+	margin-top: 10px;
+	width: 100%;
+}
+#teamBasics .slider .slide .teamSlide img{
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+#teamPlayers{
+	grid-area: teamPlayers;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#teamPlayers .playersGroup{
+	height: 700px;
+	overflow-y: auto;
+	width: 23%;
+	padding: 0px 10px;
+	display: inline-block;
+	border-radius: 15px;
+	background-color: var(--lightBlue);
+}
+#teamPlayers .playersGroup .playerInfo{
+	background-color: var(--gray);
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+#teamPlayers .playersGroup a:hover .playerInfo{
+	border: 2px solid var(--yellow)
+}
+#teamPlayers .playersGroup a{
+	text-decoration: none;
+	color: #000;
+}
+#teamPlayers .playersGroup .playerData{
+	text-align: center;
+}
+#teamPlayers .playersGroup .playerImg img{
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+#teamPlayers .playersGroup a:hover img{
+	animation: scale 1000ms ease-in-out forwards;	
+}
+
 /* ------------------ Terms&Conditions Page CSS -------------------- */
 #termsConditions{
 	padding: 15px;
@@ -351,230 +650,6 @@ body{
 	cursor: pointer;
 }
 
-/* -------------------- Old CSS ---------------------------*/
-
-#bestPlayers{
-	background-color: #999;
-}
-#bestPlayers a{
-	text-decoration: none;
-	display: inline-block;
-}
-#bestPlayers .bestPlayer{
-	width: 16.5%;
-	margin: 1.5%;
-	padding: 1%;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-    overflow: hidden;
-}
-#bestPlayers .bestPlayer .playerImg{
-	width: 100%;
-	aspect-ratio: 1;
-	object-fit: cover;
-	object-position: center;
-	border-radius: 50%;
-}
-#bestPlayers .bestPlayer .playerName{
-	color: #000;
-	font-size: 1.2rem;
-	font-weight: 700;
-}
-#bestPlayers .bestPlayer .team{
-	vertical-align: bottom;
-}
-#bestPlayers .bestPlayer .team p{
-	display: inline;
-	color: #000;
-	font-size: 1.1rem;
-	line-height: 1.1rem;
-}
-#bestPlayers .bestPlayer .team img{
-	height: 1.1rem;
-	display: inline;
-}
-
-#teamsContent{
-	width: 100%;
-	height: 350px;
-	padding: 0px;
-}
-#teamsContent .standingsTable{
-	width: 30%;
-	height: 100%;
-	display: inline-block;
-	padding: 20px;
-}
-#teamsContent .standingsTable a{
-	text-decoration: none;
-	color: #000;
-}
-#teamsContent .standingsTable table tr{
-	text-align: center;
-}
-#teamsContent .teams{
-	width: 69%;
-	height: 100%;
-	display: inline-block;
-	overflow: auto;
-}
-#teamsContent .teams .team{
-	width: 21.5%;
-	margin: 1.5%;
-	display: inline-block;
-	text-align: center;
-	background-color: #999;
-	position: relative;
-	border: 2px solid #000;
-	border-radius: 50%;
-    overflow: hidden;
-}
-#teamsContent .teams a{
-	text-decoration: none;
-}
-#teamsContent .teams .team .flag{
-	width: 100%;
-	aspect-ratio: 1;
-}
-#teamsContent .teams .team .flag img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-#teamsContent .teams .team .name{
-	width: 100%;
-	color: #FFF;
-	font-size: 2rem;
-	line-height: 2rem;
-	position: absolute;
-	top: calc(50% - 1rem);
-	text-align: center;
-}
-
-#teamBasics{
-	background-color: #999;
-	padding: 15px;
-}
-#teamBasics .teamInfo{
-	width: 25%;
-	padding: 1.5%;
-	text-align: center;
-	display: inline-block;
-}
-#teamBasics .teamInfo img{
-	width: 100%;
-	aspect-ratio: 1;
-}
-#teamBasics .teamInfo p{
-	font-size: 1.2rem;
-	font-weight: 700;
-}
-#teamBasics .slider{
-	width: 34%;
-	margin: 0 1.5%;
-	padding: 1.5%;
-	display: inline-block;
-	overflow: hidden;
-	background-color: #ccc;
-}
-#teamBasics .slider .slide{
-	display: inline-block;
-	text-align: center;
-}
-#teamBasics .slider .slide a{
-	text-decoration: none;
-}
-#teamBasics .slider .slide .teamSlide{
-	display: inline-block;
-	width: 35%;
-}
-#teamBasics .slider .slide .teamSlide a{
-	text-decoration: none;
-	color: #000;
-	font-weight: 700;
-}
-#teamBasics .slider .slide .score{
-	width: 25%;
-	display: inline-block;
-	font-size: 1.2rem;
-	font-weight: 700;
-}
-#teamBasics .slider .slide .date{
-	margin-top: 10px;
-
-}
-#teamBasics .slider .slide .teamSlide img{
-	width: 100%;
-	aspect-ratio: 1;
-}
-#teamPlayers{
-	padding: 10px;
-}
-#teamPlayers .playersGroup{
-	height: 100%;
-	width: 21.5%;
-	margin: 1.5%;
-	padding: 10px;
-	display: inline-block;
-	background-color: #ccc;
-	overflow: hidden;
-}
-#teamPlayers .playersGroup .playerInfo{
-	background-color: #999;
-	padding: 10px;
-	margin: 10px 0;
-}
-#teamPlayers .playersGroup .playerInfo a{
-	text-decoration: none;
-	color: #000;
-}
-#teamPlayers .playersGroup .playerData{
-	text-align: center;
-}
-#teamPlayers .playersGroup .playerImg img{
-	width: 100%;
-	aspect-ratio: 1;
-	border-radius: 50%;
-}
-
-#playerInfo{
-	padding: 15px;
-}
-#playerInfo .playerImg{
-	width: 30%;
-	margin: 1.5%;
-	text-align: center;
-	display: inline-block;	
-	background-color: #ccc;
-	padding: 20px;
-}
-#playerInfo .playerImg img{
-	width: 70%;
-	aspect-ratio: 1;
-	border-radius: 50%;
-}
-#playerInfo .playerData{
-	width: 63%;
-	margin: 1.5%;
-	display: inline-block;
-	text-align: center;
-	background-color: #ccc;
-	padding: 20px;
-}
-#playerInfo .playerData a{
-	text-decoration: none;
-	color: #000;
-	display: block;
-}
-#playerInfo .playerData a p{
-	display: inline-block;
-}
-#playerInfo .playerData a img{
-	height: 1rem;
-	display: inline-block;
-}
 
 /* --------------------- Media Queries ------------------------ */
 
@@ -631,6 +706,83 @@ body{
 	}
 	#leagues .league .name{
 		font-size: 0.9rem;
+	}
+
+	/* ----------------- Teams Page CSS ---------------------*/
+	#bestPlayers{
+		justify-content: space-between	;
+		align-items: center;
+		padding: 10px;
+	}
+	#bestPlayers .bestPlayer:first-child{
+		width: 100%;
+		padding: 0 20%;
+		margin-bottom: 10px;
+	}
+	#bestPlayers .bestPlayer:first-child .playerImg{
+		width: 55%;
+	}
+	#bestPlayers .bestPlayer:first-child .playerName{
+		display: block;
+		font-size: 1rem;
+	}
+	#bestPlayers .bestPlayer{
+		width: 22%;
+	}
+	#bestPlayers .bestPlayer .playerName{
+		font-size: 0.6rem;
+	}
+	#bestPlayers .bestPlayer .team{
+		display: none;
+	}
+	#bestPlayers .bestPlayer .goals{
+		display: none;
+	}
+	#teamsContent{
+		grid-template-columns: 1fr;
+		padding: 10px;
+	}
+	#teamsContent .standingsTable{
+		display: flex;
+		justify-content: center;
+		margin-top: 0;
+	}
+	#teamsContent .teams{
+		display: none;
+	}
+
+	/* ----------------- Team Page CSS ---------------------*/
+	#teamBasics{
+		padding: 10px;
+	}
+	#teamBasics .teamInfo{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#teamBasics .teamInfo img{
+		width: 30%;
+	}
+	#teamBasics .slider{
+		width: 100%;
+		margin: 5px 0;
+	}
+	#teamPlayers .playersGroup{
+		width: 100%;
+		margin: 5px 0;
+		overflow-x: auto;
+		height: unset;
+	}
+
+	/* ----------------- Player Page CSS ---------------------*/
+	#playerInfo{
+		flex-wrap: wrap;
+	}
+	#playerInfo .playerImg{
+		width: 100%;
+		padding: 0 25%;
+	}
+	#playerInfo .playerData{
+		width: 100%;
 	}
 
 	/* ------------------ Terms&Conditions Page CSS -------------------- */
