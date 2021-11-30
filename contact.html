@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Soccer Web - Contact</title>
+</head>
+<body>
+	<!-- Menu -->
+	<div id="header">
+		<!-- Logo -->
+		<div class="logo">
+			<a href="index.html">
+				<img src="assets/logo.png" alt="Soccer Web Logo">
+			</a>
+		</div>
+		<!-- Menu Links -->
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="active">
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="termsandconditions.html">Terms & Conditions</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Contact Form -->
+	<div id="contactForm">
+		<!-- Title -->
+		<p class="title">Contact Form Title</p>
+		<!-- Form -->
+		<form action="contact.php" method="GET">
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="email" placeholder="Email">
+			<select name="countries">
+				<option selected>Select a Country</option>
+				<option value="country 1">Country 1</option>
+				<option value="country 2">Country 2</option>
+				<option value="country 3">Country 3</option>
+				<option value="country 4">Country 4</option>
+			</select>
+			<input class="city" type="text" name="city" placeholder="City">
+			<textarea name="message"></textarea>
+			<input class="button" type="submit" value="Enviar">
+			<input class="button" type="reset" value="Reset">
+		</form>
+	</div>
+	<!-- Footer -->
+	<div id="footer">
+		<p>Designed by Alonso Aponte H. - Soccer Web 2021© All Rights Reserved
+			<span>
+				<a href="termsandconditions.html">Terms & Conditions</a>
+			</span>
+		</p>
+	</div>
+</body>
+</html>

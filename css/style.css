@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+#header{
+	background-color: #505050;
+}
+#header .logo{
+	width: 10%;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+#header .logo img{
+	width: 60px;
+}
+#header .nav{
+	width: 89%;
+	display: inline-block;
+	text-align: center;
+}
+#header .nav ul{
+	list-style: none;
+}
+#header .nav li{
+	display: inline-block;
+	margin: 0 20px;
+}
+#header .nav a{
+	text-decoration: none;
+	color: #999;
+}
+#header .nav .active a{
+	color: #FFF;
+}
+
+#mainVideo{
+	width: 100%;
+	height: 300px;
+}
+
+#countries{
+	padding: 20px;
+	background-color: #CCC;
+}
+#countries a{
+	text-decoration: none;
+}
+#countries .country{
+	width: 16.5%;
+	margin: 1.5%;
+	display: inline-block;
+	text-align: center;
+	background-color: #999;
+	position: relative;
+	border: 2px solid #000;
+	border-radius: 50%;
+    overflow: hidden;
+}
+#countries .country .flag{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#countries .country .flag img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+#countries .country .name{
+	width: 100%;
+	color: #FFF;
+	font-size: 2rem;
+	line-height: 2rem;
+	position: absolute;
+	top: calc(50% - 1rem);
+	text-align: center;
+}
+
+#slider{
+	height: 350px;
+	overflow: hidden;
+}
+#slider .slide{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+#slider .slide img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#leagues{
+	padding: 20px;
+	background-color: #CCC;
+}
+#leagues a{
+	text-decoration: none;
+}
+#leagues .league{
+	width: 21.5%;
+	margin: 1.5%;
+	display: inline-block;
+	text-align: center;
+	background-color: #999;
+	position: relative;
+	border: 2px solid #000;
+	border-radius: 50%;
+    overflow: hidden;
+}
+#leagues .league .flag{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#leagues .league .flag img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#leagues .league .name{
+	width: 100%;
+	color: #FFF;
+	font-size: 2rem;
+	line-height: 2rem;
+	position: absolute;
+	top: calc(50% - 1rem);
+	text-align: center;
+}
+
+#bestPlayers{
+	background-color: #999;
+}
+#bestPlayers a{
+	text-decoration: none;
+	display: inline-block;
+}
+#bestPlayers .bestPlayer{
+	width: 16.5%;
+	margin: 1.5%;
+	padding: 1%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+    overflow: hidden;
+}
+#bestPlayers .bestPlayer .playerImg{
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+}
+#bestPlayers .bestPlayer .playerName{
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#bestPlayers .bestPlayer .team{
+	vertical-align: bottom;
+}
+#bestPlayers .bestPlayer .team p{
+	display: inline;
+	color: #000;
+	font-size: 1.1rem;
+	line-height: 1.1rem;
+}
+#bestPlayers .bestPlayer .team img{
+	height: 1.1rem;
+	display: inline;
+}
+
+#teamsContent{
+	width: 100%;
+	height: 350px;
+	padding: 0px;
+}
+#teamsContent .standingsTable{
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	padding: 20px;
+}
+#teamsContent .standingsTable a{
+	text-decoration: none;
+	color: #000;
+}
+#teamsContent .standingsTable table tr{
+	text-align: center;
+}
+#teamsContent .teams{
+	width: 69%;
+	height: 100%;
+	display: inline-block;
+	overflow: auto;
+}
+#teamsContent .teams .team{
+	width: 21.5%;
+	margin: 1.5%;
+	display: inline-block;
+	text-align: center;
+	background-color: #999;
+	position: relative;
+	border: 2px solid #000;
+	border-radius: 50%;
+    overflow: hidden;
+}
+#teamsContent .teams a{
+	text-decoration: none;
+}
+#teamsContent .teams .team .flag{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#teamsContent .teams .team .flag img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#teamsContent .teams .team .name{
+	width: 100%;
+	color: #FFF;
+	font-size: 2rem;
+	line-height: 2rem;
+	position: absolute;
+	top: calc(50% - 1rem);
+	text-align: center;
+}
+
+#teamBasics{
+	background-color: #999;
+	padding: 15px;
+}
+#teamBasics .teamInfo{
+	width: 25%;
+	padding: 1.5%;
+	text-align: center;
+	display: inline-block;
+}
+#teamBasics .teamInfo img{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#teamBasics .teamInfo p{
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#teamBasics .slider{
+	width: 34%;
+	margin: 0 1.5%;
+	padding: 1.5%;
+	display: inline-block;
+	overflow: hidden;
+	background-color: #ccc;
+}
+#teamBasics .slider .slide{
+	display: inline-block;
+	text-align: center;
+}
+#teamBasics .slider .slide a{
+	text-decoration: none;
+}
+#teamBasics .slider .slide .teamSlide{
+	display: inline-block;
+	width: 35%;
+}
+#teamBasics .slider .slide .teamSlide a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+#teamBasics .slider .slide .score{
+	width: 25%;
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+#teamBasics .slider .slide .date{
+	margin-top: 10px;
+
+}
+#teamBasics .slider .slide .teamSlide img{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#teamPlayers{
+	padding: 10px;
+}
+#teamPlayers .playersGroup{
+	height: 100%;
+	width: 21.5%;
+	margin: 1.5%;
+	padding: 10px;
+	display: inline-block;
+	background-color: #ccc;
+	overflow: hidden;
+}
+#teamPlayers .playersGroup .playerInfo{
+	background-color: #999;
+	padding: 10px;
+	margin: 10px 0;
+}
+#teamPlayers .playersGroup .playerInfo a{
+	text-decoration: none;
+	color: #000;
+}
+#teamPlayers .playersGroup .playerData{
+	text-align: center;
+}
+#teamPlayers .playersGroup .playerImg img{
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+
+#playerInfo{
+	padding: 15px;
+}
+#playerInfo .playerImg{
+	width: 30%;
+	margin: 1.5%;
+	text-align: center;
+	display: inline-block;	
+	background-color: #ccc;
+	padding: 20px;
+}
+#playerInfo .playerImg img{
+	width: 70%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+#playerInfo .playerData{
+	width: 63%;
+	margin: 1.5%;
+	display: inline-block;
+	text-align: center;
+	background-color: #ccc;
+	padding: 20px;
+}
+#playerInfo .playerData a{
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+#playerInfo .playerData a p{
+	display: inline-block;
+}
+#playerInfo .playerData a img{
+	height: 1rem;
+	display: inline-block;
+}
+
+#contactForm{
+	width: 60%;
+	background-color: #ccc;
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+}
+#contactForm .title{
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 15px 0 25px;
+}
+#contactForm form input{
+	width: 100%;
+	line-height: 1.2rem;
+	margin: 5px 0;
+	padding: 5px;
+}
+#contactForm form input.city{
+	width: 47%;
+	display: inline-block;
+	margin-left: auto;
+}
+#contactForm form select{
+	width: 47%;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	margin: 5px 4% 5px 0;
+	display: inline-block;
+}
+#contactForm textarea{
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 100px;
+	margin: 5px 0;
+	padding: 5px;
+}
+#contactForm .button{
+	width: 50%;
+	cursor: pointer;
+}
+
+#termsConditions{
+	padding: 25px;
+}
+#termsConditions .title{
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#termsConditions p{
+	margin: 10px 0;
+}
+
+#aboutus{
+	padding: 25px;
+}
+#aboutus .image{
+	width: 15%;
+	float: left;
+	margin: 0 25px 0px 0;
+}
+#aboutus .image img{
+	width: 100%;
+	aspect-ratio: 1;
+}
+#aboutus .text p{
+	margin-bottom: 10px;
+}
+#aboutus .text .title{
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+#footer{
+	background-color: #505050;
+	padding: 25px;
+}
+#footer p{
+	color: #FFF;
+	text-align: center;
+}
+#footer a{
+	color: #FFF;
+	text-decoration: underline;
+}
