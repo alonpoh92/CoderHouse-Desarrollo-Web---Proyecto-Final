@@ -3,118 +3,143 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Soccer Web - Teams</title>
 </head>
 <body>
-	<div id="teamsContainer">
-		<!-- Menu -->
-		<div id="header">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="index.html">
-					<img src="assets/logo.png" alt="Soccer Web Logo">
-				</a>
-			</div>
-			<!-- Menu Links -->
-			<div class="nav">
-				<ul>
-					<li>
-						<a href="index.html">Home</a>
+	<!-- Menu -->
+	<nav class="navbar navbar-expand-md navbar-dark py-3">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<img src="assets/logo.png" alt="Soccer Web Logo" width="50" class="d-inline-block align-text-center me-2">
+				<p class="mb-0 d-none d-md-block">Soccer Web App</p>
+			  </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-md-center">
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" aria-current="page" href="index.html">Home</a>
 					</li>
-					<li>
-						<a href="aboutus.html">About Us</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="aboutus.html">About Us</a>
 					</li>
-					<li>
-						<a href="contact.html">Contact</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="contact.html">Contact</a>
 					</li>
-					<li>
-						<a href="termsandconditions.html">Terms & Conditions</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="termsandconditions.html">Terms & Conditions</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<!-- Best Players -->
-		<div id="bestPlayers">
-			<!-- Best Player #1 -->
-			<div class="bestPlayer">
-				<a class="name" href="player.html?playerId=1">
-					<img class="playerImg rounded" src="assets/player.png" alt="Player Name #1">
-					<p class="playerName">Player Name #1</p>
-				</a>
-				<a class="team" href="team.html?teamId=1">
-					<p>Team Name</p>
-					<img src="assets/shield.png" alt="Team Shield">
-				</a>
-				<p class="goals"># Goals</p>
-			</div>
-			<!-- Best Player #2 -->
-			<div class="bestPlayer">
-				<a class="name" href="player.html?playerId=2">
-					<img class="playerImg rounded" src="assets/player.png" alt="Player Name #2">
-					<p class="playerName">Player Name #2</p>
-				</a>
-				<a class="team" href="team.html?teamId=2">
-					<p>Team Name</p>
-					<img src="assets/shield.png" alt="Team Shield">
-				</a>
-				<p class="goals"># Goals</p>
-			</div>
-			<!-- Best Player #3 -->
-			<div class="bestPlayer">
-				<a class="name" href="player.html?playerId=3">
-					<img class="playerImg rounded" src="assets/player.png" alt="Player Name #3">
-					<p class="playerName">Player Name #3</p>
-				</a>
-				<a class="team" href="team.html?teamId=3">
-					<p>Team Name</p>
-					<img src="assets/shield.png" alt="Team Shield">
-				</a>
-				<p class="goals"># Goals</p>
-			</div>
-			<!-- Best Player #4 -->
-			<div class="bestPlayer">
-				<a class="name" href="player.html?playerId=4">
-					<img class="playerImg rounded" src="assets/player.png" alt="Player Name #4">
-					<p class="playerName">Player Name #4</p>
-				</a>
-				<a class="team" href="team.html?teamId=4">
-					<p>Team Name</p>
-					<img src="assets/shield.png" alt="Team Shield">
-				</a>
-				<p class="goals"># Goals</p>
-			</div>
-			<!-- Best Player #5 -->
-			<div class="bestPlayer">
-				<a class="name" href="player.html?playerId=5">
-					<img class="playerImg rounded" src="assets/player.png" alt="Player Name #5">
-					<p class="playerName">Player Name #5</p>
-				</a>
-				<a class="team" href="team.html?teamId=5">
-					<p>Team Name</p>
-					<img src="assets/shield.png" alt="Team Shield">
-				</a>
-				<p class="goals"># Goals</p>
-			</div>
+	</nav>  
+
+	<!-- Best Players -->
+	<div class="d-flex flex-wrap justify-content-around p-3 bg-lightBlue">
+		<!-- Player -->
+		<div class="col-12 col-md-2">
+			<a class="text-decoration-none text-dark" href="player.html?playerId=1">
+				<div class="rounded-circle overflow-hidden scale text-center">
+					<img class="w-40 w-md-100 ratio ratio-1x1" src="assets/player.png" alt="Player Image">
+				</div>
+				<p class="h5 fw-bold w-100 text-center">Player Name #1</p>
+			</a>
+			<a class="d-none d-md-block text-decoration-none text-dark" href="team.html?teamId=1">
+				<div class="d-flex justify-content-center align-items-center">
+					<p class="mb-0 me-1">Team Name</p>
+					<img class="text-small" src="assets/shield.png" alt="Team Shield">
+				</div>
+			</a>
+			<p class="d-none d-md-block mb-0 w-100 text-center"># Goals</p>
 		</div>
-		<div id="teamsContent">
-			<!-- Standings Table -->
-			<div class="standingsTable">
-				<table>
+		<!-- Player -->
+		<div class="col-3 px-1 px-md-0 col-md-2">
+			<a class="text-decoration-none text-dark" href="player.html?playerId=2">
+				<div class="rounded-circle overflow-hidden scale">
+					<img class="w-100 ratio ratio-1x1" src="assets/player.png" alt="Player Image">
+				</div>
+				<p class="text-sm-small h5 fw-bold w-100 text-center">Player Name #2</p>
+			</a>
+			<a class="d-none d-md-block text-decoration-none text-dark" href="team.html?teamId=2">
+				<div class="d-flex justify-content-center align-items-center">
+					<p class="mb-0 me-1">Team Name</p>
+					<img class="text-small" src="assets/shield.png" alt="Team Shield">
+				</div>
+			</a>
+			<p class="d-none d-md-block mb-0 w-100 text-center"># Goals</p>
+		</div>
+		<!-- Player -->
+		<div class="col-3 px-1 px-md-0 col-md-2">
+			<a class="text-decoration-none text-dark" href="player.html?playerId=3">
+				<div class="rounded-circle overflow-hidden scale">
+					<img class="w-100 ratio ratio-1x1" src="assets/player.png" alt="Player Image">
+				</div>
+				<p class="text-sm-small h5 fw-bold w-100 text-center">Player Name #3</p>
+			</a>
+			<a class="d-none d-md-block text-decoration-none text-dark" href="team.html?teamId=3">
+				<div class="d-flex justify-content-center align-items-center">
+					<p class="mb-0 me-1">Team Name</p>
+					<img class="text-small" src="assets/shield.png" alt="Team Shield">
+				</div>
+			</a>
+			<p class="d-none d-md-block mb-0 w-100 text-center"># Goals</p>
+		</div>
+		<!-- Player -->
+		<div class="col-3 px-1 px-md-0 col-md-2">
+			<a class="text-decoration-none text-dark" href="player.html?playerId=4">
+				<div class="rounded-circle overflow-hidden scale">
+					<img class="w-100 ratio ratio-1x1" src="assets/player.png" alt="Player Image">
+				</div>
+				<p class="text-sm-small h5 fw-bold w-100 text-center">Player Name #4</p>
+			</a>
+			<a class="d-none d-md-block text-decoration-none text-dark" href="team.html?teamId=4">
+				<div class="d-flex justify-content-center align-items-center">
+					<p class="mb-0 me-1">Team Name</p>
+					<img class="text-small" src="assets/shield.png" alt="Team Shield">
+				</div>
+			</a>
+			<p class="d-none d-md-block mb-0 w-100 text-center"># Goals</p>
+		</div>
+		<!-- Player -->
+		<div class="col-3 px-1 px-md-0 col-md-2">
+			<a class="text-decoration-none text-dark" href="player.html?playerId=5">
+				<div class="rounded-circle overflow-hidden scale">
+					<img class="w-100 ratio ratio-1x1" src="assets/player.png" alt="Player Image">
+				</div>
+				<p class="text-sm-small h5 fw-bold w-100 text-center">Player Name #5</p>
+			</a>
+			<a class="d-none d-md-block text-decoration-none text-dark" href="team.html?teamId=5">
+				<div class="d-flex justify-content-center align-items-center">
+					<p class="mb-0 me-1">Team Name</p>
+					<img class="text-small" src="assets/shield.png" alt="Team Shield">
+				</div>
+			</a>
+			<p class="d-none d-md-block mb-0 w-100 text-center"># Goals</p>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-center p-3 bg-gray">
+		<!-- Standings Table -->
+		<div class="col-12 col-md-3 d-flex justify-content-center p-0 py-md-3">
+			<div class="overflow-auto">
+				<table class="position-relative">
 					<thead>
 						<tr>
-							<th class="fixed"></th>
-							<th>PP</th>
-							<th>PW</th>
-							<th>PD</th>
-							<th>PL</th>
-							<th>GD</th>
-							<th>Pts</th>
+							<th class="position-sticky start-0 text-nowrap pe-2 bg-gray"></th>
+							<th class="px-2">PP</th>
+							<th class="px-2">PW</th>
+							<th class="px-2">PD</th>
+							<th class="px-2">PL</th>
+							<th class="px-2">GD</th>
+							<th class="px-2">Pts</th>
 						</tr>	
 					</thead>
 					<tbody>
 						<tr>
-							<th class="fixed"><span>1 </span><a href="team.html?teamId=1">Team 1</a></th>
+							<th class="position-sticky start-0 text-nowrap pe-2 bg-gray"><span>1 </span><a class="text-decoration-none text-dark" href="team.html?teamId=1">Team 1</a></th>
 							<td>5</td>
 							<td>4</td>
 							<td>1</td>
@@ -123,7 +148,7 @@
 							<td>13</td>
 						</tr>
 						<tr>
-							<th class="fixed"><span>2 </span><a href="team.html?teamId=2">Team 2</a></th>
+							<th class="position-sticky start-0 text-nowrap pe-2 bg-gray"><span>2 </span><a class="text-decoration-none text-dark" href="team.html?teamId=2">Team 2</a></th>
 							<td>5</td>
 							<td>3</td>
 							<td>2</td>
@@ -132,7 +157,7 @@
 							<td>11</td>
 						</tr>
 						<tr>
-							<th class="fixed"><span>3 </span><a href="team.html?teamId=3">Team 3</a></th>
+							<th class="position-sticky start-0 text-nowrap pe-2 bg-gray"><span>3 </span><a class="text-decoration-none text-dark" href="team.html?teamId=3">Team 3</a></th>
 							<td>5</td>
 							<td>3</td>
 							<td>1</td>
@@ -143,79 +168,85 @@
 					</tbody>
 				</table>
 			</div>
-			<!-- Teams List -->
-			<div class="teams">						
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=1">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team 1">
+		</div>
+		<!-- Teams List -->
+		<div class="d-none d-md-block col-md-9">
+			<!-- Teams -->
+			<div class="d-flex flex-wrap justify-content-center bg-gray">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=1">
+								<p class="mb-0 h3">Team 1</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team 1</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=2">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team 2">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=2">
+								<p class="mb-0 h3">Team 2</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team 2</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=3">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team 3">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=3">
+								<p class="mb-0 h3">Team 3</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team 3</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=4">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team 4">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=4">
+								<p class="mb-0 h3">Team 4</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team 4</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=5">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team 5">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=5">
+								<p class="mb-0 h3">Team 5</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team 5</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				<div class="team rounded bordered">
-					<a href="team.html?teamId=n">
-						<div class="flag">
-							<img src="assets/shield.png" alt="Shield Team n">
+				<!-- Team -->
+				<div class="col-3 p-2 p-md-3 appearToDown">
+					<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+						<div class="scale rounded-circle bg-img-shield overflow-hidden">
+							<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-white text-hover-darkBlue" href="team.html?teamId=n">
+								<p class="mb-0 h3">Team n</p>
+							</a>
 						</div>
-						<div class="name">
-							<p>Team n</p>
-						</div>
-					</a>
+					</div>
 				</div>
-				
+					
 			</div>
 		</div>
-		<!-- Footer -->
-		<div id="footer">
-			<p>Designed by Alonso Aponte H. - Soccer Web 2021© All Rights Reserved
-				<span>
-					<a href="termsandconditions.html">Terms & Conditions</a>
-				</span>
-			</p>
-		</div>
 	</div>
+
+	<!-- Footer -->
+	<div class="container-fluid bg-darkBlue d-flex justify-content-center align-items-center py-4">
+		<p class="text-small text-white mb-0 text-center">Designed by Alonso Aponte H. - Soccer Web App 2021© All Rights Reserved
+			<span>
+				<a class="text-white" href="termsandconditions.html">Terms & Conditions</a>
+			</span>
+		</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

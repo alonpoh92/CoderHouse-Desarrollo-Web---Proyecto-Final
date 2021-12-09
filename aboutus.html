@@ -3,74 +3,64 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Soccer Web - About Us</title>
 </head>
 <body>
 	<!-- Menu -->
-	<div id="header">
-		<!-- Logo -->
-		<div class="logo">
-			<a href="index.html">
-				<img src="assets/logo.png" alt="Soccer Web Logo">
-			</a>
+	<nav class="navbar navbar-expand-md navbar-dark py-3">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<img src="assets/logo.png" alt="Soccer Web Logo" width="50" class="d-inline-block align-text-center me-2">
+				<p class="mb-0 d-none d-md-block">Soccer Web App</p>
+			  </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-md-center">
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0 active" href="aboutus.html">About Us</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="termsandconditions.html">Terms & Conditions</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!-- Menu Links -->
-		<div class="nav">
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li class="active">
-					<a href="aboutus.html">About Us</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-				<li>
-					<a href="termsandconditions.html">Terms & Conditions</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div id="aboutus">
-		<!-- Image -->
-		<div class="image">
-			<img src="assets/about_us.png" alt="About Us Image">
-		</div>
-		<!-- About Us Text -->
-		<div class="text">
-			<!-- Title -->
-			<p class="title">About Us</p>
-			<!-- Text -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</nav>
+
+	<div class="d-flex flex-wrap p-3">
+		<div class="col-12">
+			<div class="float-start w-25 me-3">
+				<img class="w-100" src="assets/about_us.png" alt="About Us Image">
+			</div>
+			<p class="fw-bold h2">
+				About Us
 			</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore deserunt alias illo, voluptas culpa illum voluptatum suscipit beatae porro dolorem, aperiam temporibus repellat perspiciatis, et blanditiis libero cumque? Provident!</p>
+			<p class="mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore deserunt alias illo, voluptas culpa illum voluptatum suscipit beatae porro dolorem, aperiam temporibus repellat perspiciatis, et blanditiis libero cumque? Provident!</p>
+			<p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt vitae magni, esse aspernatur quaerat dolorem. Inventore at facere minus doloremque? Nemo provident esse a, eveniet rem minus similique libero? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore deserunt alias illo, voluptas culpa illum voluptatum suscipit beatae porro dolorem, aperiam temporibus repellat perspiciatis, et blanditiis libero cumque? Provident!</p>
+			<p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis inventore deserunt alias illo, voluptas culpa illum voluptatum suscipit beatae porro dolorem, aperiam temporibus repellat perspiciatis, et blanditiis libero cumque? Provident! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ea accusantium tempora reiciendis adipisci, dolorum facere illum ab molestiae aut temporibus incidunt, illo repudiandae recusandae vel fuga possimus dolore dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique necessitatibus repudiandae rerum autem a vero aspernatur explicabo veritatis nesciunt! Nihil qui perspiciatis sed ratione odit fugit nisi dolores laboriosam ipsam!</p>
 		</div>
 	</div>
+
 	<!-- Footer -->
-	<div id="footer">
-		<p>Designed by Alonso Aponte H. - Soccer Web 2021© All Rights Reserved
+	<div class="container-fluid bg-darkBlue d-flex justify-content-center align-items-center py-4">
+		<p class="text-small text-white mb-0 text-center">Designed by Alonso Aponte H. - Soccer Web App 2021© All Rights Reserved
 			<span>
-				<a href="termsandconditions.html">Terms & Conditions</a>
+				<a class="text-white" href="termsandconditions.html">Terms & Conditions</a>
 			</span>
 		</p>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
