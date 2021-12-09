@@ -3,139 +3,132 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Soccer Web - Home</title>
 </head>
 <body>
-    <div id="indexContainer">
-        <!-- Menu -->
-		<div id="header">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="index.html">
-					<img src="assets/logo.png" alt="Soccer Web Logo">
-				</a>
-			</div>
-			<!-- Menu Links -->
-			<div class="nav">
-				<ul>
-                    <li class="active">
-						<a href="index.html">Home</a>
+	<!-- Menu -->
+	<nav class="navbar navbar-expand-md navbar-dark py-3">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<img src="assets/logo.png" alt="Soccer Web Logo" width="50" class="d-inline-block align-text-center me-2">
+				<p class="mb-0 d-none d-md-block">Soccer Web App</p>
+			  </a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 justify-content-md-center">
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0 active" aria-current="page" href="index.html">Home</a>
 					</li>
-					<li>
-						<a href="aboutus.html">About Us</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="aboutus.html">About Us</a>
 					</li>
-					<li>
-						<a href="contact.html">Contact</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="contact.html">Contact</a>
 					</li>
-					<li>
-						<a href="termsandconditions.html">Terms & Conditions</a>
+					<li class="nav-item mx-3">
+						<a class="nav-link p-0" href="termsandconditions.html">Terms & Conditions</a>
 					</li>
 				</ul>
 			</div>
 		</div>
+	</nav>  
 
-        <!-- Main Video -->
-		<div id="mainVideo">
-			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/A-r9sj7zHJ4?start=15&autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="autoplay" encrypted-media allowfullscreen></iframe>
-            <div class="blueFilter">
-            </div>
-            <p class="mainTitle">Soccer Web App</p>
+	<!-- Main Video -->
+	<div class="mainMedia position-relative">
+		<iframe class="grayScale" width="100%" height="100%" src="https://www.youtube.com/embed/A-r9sj7zHJ4?start=15&autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="autoplay" encrypted-media allowfullscreen></iframe>
+		<div class="position-absolute top-0 w-100 h-100 bg-darkBlue-alpha d-flex justify-content-center align-items-center">
+			<p class="h1 text-yellow">Soccer Web App</p>
 		</div>
+	</div>
 
-        <!-- Countries -->
-		<div id="countries"> 
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=1">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 1">	
-					</div>	
-					<div class="name">
-						<p>Country 1</p>
-					</div>	
-				</a>		
+	<!-- Countries -->
+	<div class="d-flex flex-wrap justify-content-center p-3 p-md-4 bg-gray">
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=1">
+						<p class="mb-0 h3">Country 1</p>
+					</a>
+				</div>
 			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=2">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 2">	
-					</div>	
-					<div class="name">
-						<p>Country 2</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=3">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 3">	
-					</div>	
-					<div class="name">
-						<p>Country 3</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=4">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 4">	
-					</div>	
-					<div class="name">
-						<p>Country 4</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=5">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 5">	
-					</div>	
-					<div class="name">
-						<p>Country 5</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=6">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 6">	
-					</div>	
-					<div class="name">
-						<p>Country 6</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=7">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country 7">	
-					</div>	
-					<div class="name">
-						<p>Country 7</p>
-					</div>	
-				</a>		
-			</div>
-            <div class="country rounded bordered">
-				<a href="leagues.html?countryId=n">
-					<div class="flag">
-						<img class="cover" src="assets/flag.png" alt="Flag Country n">	
-					</div>	
-					<div class="name">
-						<p>Country n</p>
-					</div>	
-				</a>		
-			</div>
-            
 		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=2">
+						<p class="mb-0 h3">Country 2</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=3">
+						<p class="mb-0 h3">Country 3</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=4">
+						<p class="mb-0 h3">Country 4</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=5">
+						<p class="mb-0 h3">Country 5</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=6">
+						<p class="mb-0 h3">Country 6</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Country -->
+		<div class="col-6 col-md-2 p-2 p-md-3 appearToDown">
+			<div class="border border-2 border-darkBlue border-hover-yellow rounded-circle overflow-hidden ratio ratio-1x1">
+				<div class="scale rounded-circle bg-img-flag overflow-hidden">
+					<a class="w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none text-yellow text-hover-darkBlue" href="leagues.html?countryId=n">
+						<p class="mb-0 h3">Country n</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 
-        <!-- Footer -->
-		<div id="footer">
-			<p>Designed by Alonso Aponte H. - Soccer Web App 2021© All Rights Reserved
-				<span>
-					<a href="termsandconditions.html">Terms & Conditions</a>
-				</span>
-			</p>
-		</div>
-    </div>
+	<!-- Footer -->
+	<div class="container-fluid bg-darkBlue d-flex justify-content-center align-items-center py-4">
+		<p class="text-small text-white mb-0 text-center">Designed by Alonso Aponte H. - Soccer Web App 2021© All Rights Reserved
+			<span>
+				<a class="text-white" href="termsandconditions.html">Terms & Conditions</a>
+			</span>
+		</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
