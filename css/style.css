@@ -98,6 +98,18 @@ nav{
 .scale:hover{
 	animation: scale 1000ms ease-in-out forwards;
 }
+.appearToDown-dalay-1{
+	animation: appearToDown 2000ms ease-in-out forwards;
+}
+.appearToDown-dalay-2{
+	animation: appearToDown 2500ms ease-in-out forwards;
+}
+.appearToDown-dalay-3{
+	animation: appearToDown 3000ms ease-in-out forwards;
+}
+.appearToDown-dalay-4{
+	animation: appearToDown 3500ms ease-in-out forwards;
+}
 
 
 /* --------------------- Media Queries ------------------------ */
@@ -117,6 +129,9 @@ nav{
 
 
 @media all and (min-width: 761px) {
+	.w-md-50{
+		width: 50% !important;
+	}
 	.w-md-100{
 		width: 100% !important;
 	}
@@ -134,6 +149,9 @@ nav{
 @keyframes appearToDown{
 	0%{
 		transform: translateY(-20px);
+		opacity: 0;
+	}
+	20%{
 		opacity: 0;
 	}
 	45%{
