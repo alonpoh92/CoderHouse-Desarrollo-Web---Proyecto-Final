@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Noticias del América de Cali">
+	<meta name="keywords" content="FUTBOL, LIGA COLOMBIA, AMERICA, CAMPEON AMERICA">
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>América de Cali | Noticias</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/logo.png" alt="América de Cali Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav mb-2 mb-md-0 w-100">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="palmares.html">Palmarés</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="simbolos.html">Símbolos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="noticias.html">Noticias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <section class="contacto">
+        <div class="container-fluid">
+            <h1>Información de Contacto</h1>
+            <div class="row">
+                <form class="col-12 col-md-6 mb-4 mb-md-0">
+                    <div class="col-12 mb-3">
+                        <label for="name" class="form-label mb-0">Nombre</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                    </div>
+                    <div class=" col-12 mb-3">
+                        <label for="email" class="form-label mb-0">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6 mb-3">
+                            <label for="country" class="form-label mb-0">País</label>
+                            <select id="country" class="form-select">
+                                  <option>Seleccione un País</option>
+                                  <option value="country 1">País 1</option>
+                                  <option value="country 2">País 2</option>
+                                  <option value="country 3">País 3</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="city" class="form-label mb-0">Ciudad</label>
+                            <input type="text" class="form-control" id="city" aria-describedby="cityHelp">
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label mb-0">Mensaje</label>
+                        <textarea name="message" class="form-control" id="message" rows="10"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto todos los <span><a class="text-dark" href="index.html">Terminos y Condiciones</a></span>
+                        </label>
+                    </div>
+                    <div class="d-flex justify-content-center botones-contacto">
+                        <button type="submit" class="btn btn-primary me-3">Enviar</button>
+                        <button type="reset" class="btn btn-primary">Reiniciar</button>
+                    </div>
+                </form>   
+                <div class="col-12 col-md-6">
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=sede%20america%20de%20cali&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div> 
+            </div>
+        </div>
+	</section>
+
+
+    <footer>
+		<div class="container-fluid">
+			<p class="font-size-small mb-0">Diseñado y programado por Alonso Aponte Hung</p>
+			<p class="font-size-small mb-0">Todos los derechos reservados 2021</p>
+		</div>
+	</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
