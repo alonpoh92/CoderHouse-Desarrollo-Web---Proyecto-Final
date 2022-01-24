@@ -13,19 +13,28 @@ body {
 
 nav {
   background-color: #BC0A11; }
-  nav #menu a {
+  nav #menu .nav-item a {
     text-decoration: none;
     color: #FFFFFF;
     padding-bottom: 2px;
     margin: 0 10px;
     border-bottom: 2px solid #BC0A11;
     opacity: 0.6; }
-    nav #menu a.active {
+    nav #menu .nav-item a.active {
       border-bottom: 2px solid #FFFFFF;
       opacity: 1; }
-    nav #menu a:hover {
+    nav #menu .nav-item a:hover {
       border-bottom: 2px solid #FFFFFF;
       opacity: 1; }
+  nav #menu .nav-item.social-media {
+    margin: 0 10px;
+    display: inline-flex; }
+    nav #menu .nav-item.social-media a {
+      opacity: 1;
+      border-bottom: none;
+      margin: 0 3px; }
+      nav #menu .nav-item.social-media a i {
+        color: #FFFFFF; }
   nav #menu ul {
     width: 100%;
     display: flex;
@@ -42,6 +51,12 @@ footer {
     color: #FFFFFF;
     width: 100%;
     text-align: center; }
+  footer .social-media {
+    text-align: center; }
+    footer .social-media a {
+      text-decoration: none; }
+      footer .social-media a i {
+        color: #FFFFFF; }
 
 .main-banner {
   width: 100%;
@@ -116,6 +131,8 @@ footer {
     border-bottom: 2px solid #A0080D;
     display: inline-block;
     padding: 0 10px 0 0; }
+  .simbolos h2 {
+    display: inline-block; }
   .simbolos .intro {
     display: flex;
     flex-wrap: wrap;
@@ -146,26 +163,43 @@ footer {
     padding: 0 10px 0 0; }
   .noticias article {
     padding: 10px; }
-    .noticias article div {
+    .noticias article .content {
       border-radius: 20px;
       box-shadow: 0px 0px 5px black;
       overflow: hidden;
-      height: 100%; }
-      .noticias article div img {
+      height: 100%;
+      position: relative; }
+      .noticias article .content img {
         width: 100%;
         height: 250px;
         object-fit: cover;
         object-position: top; }
-      .noticias article div h2 {
+      .noticias article .content h2 {
         color: #A0080D;
         padding: 5px;
         text-transform: uppercase; }
-      .noticias article div p {
+      .noticias article .content p {
         padding: 5px;
         margin-bottom: 10px; }
-        .noticias article div p:last-child {
-          margin-bottom: 0px; }
-    .noticias article:hover div {
+        .noticias article .content p:last-child {
+          margin-bottom: 55px; }
+      .noticias article .content .btn-link {
+        text-align: center;
+        padding: 0 0 15px;
+        position: absolute;
+        width: 100%;
+        bottom: 0px; }
+        .noticias article .content .btn-link a {
+          text-decoration: none;
+          color: #FFFFFF;
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: #A0080D;
+          border-color: #A0080D;
+          border-radius: 10px; }
+          .noticias article .content .btn-link a:hover {
+            background-color: #BC0A11; }
+    .noticias article:hover .content {
       box-shadow: 0px 0px 5px #BC0A11; }
 
 .contacto {
@@ -182,29 +216,41 @@ footer {
     .contacto .botones-contacto button:hover {
       background-color: #BC0A11; }
 
+.noEncontrada {
+  height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .noEncontrada p {
+    color: #A0080D;
+    margin-bottom: 0; }
+
 .font-weight-light {
   font-weight: 300; }
 
-.font-weight-normal, nav #menu a {
+.font-weight-normal, nav #menu .nav-item a {
   font-weight: 400; }
 
-.font-weight-bold, .historia h1, .historia article h2, .palmares h1, .palmares article h2, .palmares article p, .simbolos h1, .simbolos article h2, .noticias h1, .noticias article div h2, .contacto h1 {
+.font-weight-bold, .historia h1, .historia article h2, .palmares h1, .palmares article h2, .palmares article p, .simbolos h1, .simbolos article h2, .noticias h1, .noticias article .content h2, .contacto h1, .noEncontrada p {
   font-weight: 700; }
 
-.font-size-small, .historia article p, .simbolos article p {
+.font-size-small {
   font-size: 0.7rem; }
 
-.font-size-normal, .noticias article div p {
+.font-size-normal, .noticias article .content p {
   font-size: 1rem; }
 
-.font-size-big, .historia article h2, .simbolos article h2, .noticias article div h2 {
+.font-size-big, .historia article h2, .simbolos article h2, .noticias article .content h2 {
   font-size: 1.2rem; }
 
-.font-size-superBig, .historia h1, .palmares h1, .simbolos h1, .noticias h1, .contacto h1 {
+.font-size-superBig, .historia h1, .palmares h1, .simbolos h1, .noticias h1, .contacto h1, .noEncontrada p {
   font-size: 1.5rem; }
 
 @media (max-width: 768px) {
   nav #menu li {
     width: 100%; }
   .historia article:nth-child(n+1) {
-    border-right: none; } }
+    border-right: none; }
+  .simbolos .intro .escudo img {
+    max-width: unset; } }

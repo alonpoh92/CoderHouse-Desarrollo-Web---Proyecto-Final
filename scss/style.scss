@@ -19,23 +19,37 @@ body{
 nav{
 	background-color: $red;
     #menu{
-		a{
-			text-decoration: none;
-			color: $white;
-			padding-bottom: 2px;
-			margin: 0 10px;
-			border-bottom: 2px solid $red;
-			opacity: 0.6;
-			@extend .font-weight-normal;
-			&.active{
-				border-bottom: 2px solid $white;
-				opacity: 1;
+		.nav-item{
+			a{
+				text-decoration: none;
+				color: $white;
+				padding-bottom: 2px;
+				margin: 0 10px;
+				border-bottom: 2px solid $red;
+				opacity: 0.6;
+				@extend .font-weight-normal;
+				&.active{
+					border-bottom: 2px solid $white;
+					opacity: 1;
+				}
+				&:hover{
+					border-bottom: 2px solid $white;
+					opacity: 1;
+				}
 			}
-			&:hover{
-				border-bottom: 2px solid $white;
-				opacity: 1;
+			&.social-media{
+				margin: 0 10px;
+				display: inline-flex;
+				a{
+					opacity: 1;
+					border-bottom: none;
+					margin: 0 3px;
+					i{
+						color: $white;	
+					}
+				}
 			}
-        }
+		}
 		ul{
 			width: 100%;
 			display: flex;
@@ -61,6 +75,15 @@ footer{
 		color: $white;
 		width: 100%;
 		text-align: center;
+	}
+	.social-media{
+		text-align: center;
+		a{
+			text-decoration: none;
+			i{
+				color: $white;
+			}
+		}
 	}
 }
 
@@ -105,7 +128,6 @@ footer{
 			margin-bottom: 20px;
 		}
 		p{
-			@extend .font-size-small;
 			margin-bottom: 10px;
 			&:last-child{
 				margin-bottom: 0px;
@@ -170,6 +192,9 @@ footer{
 		display: inline-block;
 		padding: 0 10px 0 0;
 	}
+	h2{
+		display: inline-block;
+	}
 	.intro{
 		display: flex;
 		flex-wrap: wrap;
@@ -192,7 +217,6 @@ footer{
 			padding: 0 10px 0 0;
 		}
 		p{
-			@extend .font-size-small;
 			margin-bottom: 10px;
 			&:last-child{
 				margin-bottom: 0px;
@@ -219,11 +243,12 @@ footer{
 	}
 	article{
 		padding: 10px;
-		div{
+		.content{
 			border-radius: 20px;
 			box-shadow: 0px 0px 5px black;
 			overflow: hidden;
 			height: 100%;
+			position: relative;
 			img{
 				width: 100%;
 				height: 250px;
@@ -242,12 +267,31 @@ footer{
 				@extend .font-size-normal;
 				margin-bottom: 10px;
 				&:last-child{
-					margin-bottom: 0px;
+					margin-bottom: 55px;
+				}
+			}
+			.btn-link{
+				text-align: center;
+				padding: 0 0 15px;
+				position: absolute;
+				width: 100%;
+				bottom: 0px;
+				a{
+					text-decoration: none;
+					color: $white;
+					display: inline-block;
+					padding: 5px 10px;
+					background-color: $darkRed;
+					border-color: $darkRed;
+					border-radius: 10px;
+					&:hover{
+						background-color: $red;
+					}
 				}
 			}
 		}
 		&:hover{
-			div{
+			.content{
 				box-shadow: 0px 0px 5px $red;
 			}
 		}
@@ -273,6 +317,20 @@ footer{
 				background-color: $red;
 			}
 		}
+	}
+}
+
+.noEncontrada{
+	height: 500px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	p{
+		@extend .font-size-superBig;
+		@extend .font-weight-bold;
+		color: $darkRed;
+		margin-bottom: 0;
 	}
 }
 
@@ -302,6 +360,16 @@ footer{
 		article{
 			&:nth-child(n+1){
 				border-right: none;
+			}
+		}
+	}
+
+	.simbolos{
+		.intro{
+			.escudo{
+				img{
+					max-width: unset;
+				}
 			}
 		}
 	}
